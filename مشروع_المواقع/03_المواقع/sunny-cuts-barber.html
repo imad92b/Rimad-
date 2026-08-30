@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunny Cuts Barber | صالون حلاقة هيوستن</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--g:#1a1a1a;--gold:#c9a227;--cream:#f7f3e8;--txt:#2b2b2b}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;color:var(--txt);line-height:1.7}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--g);color:#fff;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-weight:900;font-size:1.3rem;color:var(--gold)}
+.logo span{color:#fff}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{color:#ddd;text-decoration:none;font-weight:500}
+.cta{background:var(--gold);color:var(--g)!important;padding:8px 16px;border-radius:30px;font-weight:700}
+.burger{display:none;background:none;border:none;color:#fff;font-size:1.8rem}
+.hero{background:linear-gradient(rgba(26,26,26,.87),rgba(26,26,26,.87)),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=60') center/cover;color:#fff;padding:90px 0;text-align:center}
+.hero h1{font-size:2.5rem;font-weight:900;margin-bottom:16px}
+.hero p{max-width:620px;margin:0 auto 28px;color:#eee}
+.btn{display:inline-block;background:var(--gold);color:var(--g);padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:700;margin:5px}
+.btn.ghost{background:transparent;color:#fff;border:2px solid var(--gold)}
+section{padding:70px 0}
+.sec-tag{color:var(--gold);font-weight:700}
+h2{font-size:2rem;font-weight:900;margin:8px 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#fff;border:1px solid #eee;border-radius:16px;padding:24px;box-shadow:0 6px 18px rgba(0,0,0,.06);text-align:center}
+.card h3{color:var(--g);margin-bottom:10px}
+.bg{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.about-grid img{border-radius:16px;width:100%;height:300px;object-fit:cover}
+ul.check{list-style:none}
+ul.check li{padding:6px 0;border-bottom:1px dashed #ddd}
+ul.check li::before{content:"✔ ";color:var(--gold);font-weight:900}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+form input,form textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin-bottom:14px;font-family:inherit}
+form button{background:var(--g);color:var(--gold);border:none;padding:13px 30px;border-radius:30px;font-weight:700;cursor:pointer;font-family:inherit}
+footer{background:var(--g);color:#ccc;text-align:center;padding:26px}
+footer b{color:var(--gold)}
+.fab{position:fixed;bottom:20px;left:20px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:60}
+@media(max-width:760px){.nav-links{position:fixed;top:60px;right:0;flex-direction:column;background:var(--g);width:100%;padding:20px;display:none}.nav-links.open{display:flex}.burger{display:block}.hero h1{font-size:1.9rem}.about-grid,.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav wrap">
+    <div class="logo">✂️ Sunny <span>Cuts</span></div>
+    <ul class="nav-links" id="links">
+      <li><a href="#home">الرئيسية</a></li><li><a href="#services">الخدمات</a></li>
+      <li><a href="#about">من نحن</a></li><li><a href="#contact">اتصل بنا</a></li>
+      <li><a href="#contact" class="cta">احجز موعدًا</a></li>
+    </ul>
+    <button class="burger" id="burger">☰</button>
+  </div>
+</header>
+<section class="hero" id="home"><div class="wrap">
+  <h1>قِصّة تليق بأسلوبك</h1>
+  <p>صالون Sunny Cuts في هيوستن يقدّم قصّات عصرية وكلاسيكية بأيدي حلّاقين محترفين. احجز موعدك عبر واتساب.</p>
+  <a href="#services" class="btn">الخدمات</a><a href="#contact" class="btn ghost">احجز الآن</a>
+</div></section>
+<section id="services"><div class="wrap">
+  <div class="sec-tag">خدماتنا</div><h2>قصّات وأسعار واضحة</h2>
+  <div class="grid">
+    <div class="card"><h3>قصّة رجل</h3><p>قصّة، غسل، وتصفيف — $25</p></div>
+    <div class="card"><h3>قصّة + لحية</h3><p>باقة كاملة مع تشذيب اللحية — $35</p></div>
+    <div class="card"><h3>قصّة أطفال</h3><p>قصّة سريعة ومرحة للصغار — $18</p></div>
+    <div class="card"><h3>تشذيب لحية فقط</h3><p>تشذيب دقيق وتصفيف — $15</p></div>
+  </div>
+  <p style="text-align:center;margin-top:22px">🎓 <b>عرض الطلاب:</b> خصم 10%</p>
+</div></section>
+<section class="bg" id="about"><div class="wrap about-grid">
+  <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=60" alt="صالون حلاقة">
+  <div><div class="sec-tag">من نحن</div><h2>لأنّ موعدك يستحق الاحترام</h2>
+  <p>منذ 2016، حلّاقونا يجمعون بين الدقّة والسرعة. حجز مسبق عبر واتساب يعني وقتك وقتك.</p>
+  <ul class="check"><li>حلّاقون محترفون</li><li>أدوات معقّمة</li><li>حجز موعد عبر واتساب</li><li>قهوة مجانية</li></ul>
+  <a href="#contact" class="btn" style="margin-top:18px">احجز موعدك</a></div>
+</div></section>
+<section id="contact"><div class="wrap contact-grid">
+  <div><div class="sec-tag">اتصل بنا</div><h2>احجز من جوالك</h2>
+  <p>📞 <b>الهاتف:</b> <a href="tel:+17135550645">+1 713-555-0645</a></p>
+  <p>📍 <b>العنوان:</b> 8900 Bellaire Blvd, Houston, TX</p>
+  <p>🕒 <b>ساعات العمل:</b> الثلاثاء–السبت 10ص–8م | الأحد 11ص–5م</p></div>
+  <div><form id="book">
+    <input type="text" placeholder="الاسم" required><input type="tel" placeholder="رقم الهاتف" required>
+    <input type="text" placeholder="الخدمة المطلوبة" required><input type="time" placeholder="الوقت المفضّل" required>
+    <button type="submit">إرسال طلب الحجز</button>
+  </form></div>
+</div></section>
+<footer><p>© 2026 <b>Sunny Cuts</b> — Houston, TX.</p></footer>
+<a class="fab" href="https://wa.me/17135550645" target="_blank">💬</a>
+<script>
+document.getElementById('burger').onclick=()=>document.getElementById('links').classList.toggle('open');
+document.getElementById('book').addEventListener('submit',e=>{e.preventDefault();alert('تم استلام طلب الحجز!');});
+</script>
+</body></html>
