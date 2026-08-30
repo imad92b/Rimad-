@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Steps Daycare | رعاية أطفال كولومبوس</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--p:#f07a9e;--p2:#ffaec9;--warm:#fff3f7;--dark:#5c2a3e;--txt:#3a3a3a}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;color:var(--txt);line-height:1.7}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;background:#fff;color:var(--dark);z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-weight:900;font-size:1.3rem;color:var(--p)}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{color:var(--dark);text-decoration:none;font-weight:500}
+.cta{background:var(--p);color:#fff!important;padding:8px 16px;border-radius:30px;font-weight:700}
+.burger{display:none;background:none;border:none;color:var(--dark);font-size:1.8rem}
+.hero{background:linear-gradient(rgba(92,42,62,.85),rgba(92,42,62,.85)),url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=60') center/cover;color:#fff;padding:90px 0;text-align:center}
+.hero h1{font-size:2.5rem;font-weight:900;margin-bottom:16px}
+.hero p{max-width:640px;margin:0 auto 28px;color:#fdf}
+.btn{display:inline-block;background:var(--p);color:#fff;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:700;margin:5px}
+.btn.ghost{background:transparent;border:2px solid #fff}
+section{padding:70px 0}
+.sec-tag{color:var(--p);font-weight:700}
+h2{font-size:2rem;font-weight:900;margin:8px 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#fff;border:1px solid #ffe0ec;border-radius:16px;padding:24px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.card h3{color:var(--p);margin-bottom:10px}
+.bg{background:var(--warm)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.about-grid img{border-radius:16px;width:100%;height:300px;object-fit:cover}
+ul.check{list-style:none}
+ul.check li{padding:6px 0;border-bottom:1px dashed #f3c8d8}
+ul.check li::before{content:"✔ ";color:var(--p);font-weight:900}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+form input,form textarea{width:100%;padding:12px;border:1px solid #f3c8d8;border-radius:10px;margin-bottom:14px;font-family:inherit}
+form button{background:var(--p);color:#fff;border:none;padding:13px 30px;border-radius:30px;font-weight:700;cursor:pointer;font-family:inherit}
+footer{background:var(--dark);color:#f5d9e4;text-align:center;padding:26px}
+footer b{color:var(--p2)}
+.fab{position:fixed;bottom:20px;left:20px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:60}
+@media(max-width:760px){.nav-links{position:fixed;top:60px;right:0;flex-direction:column;background:#fff;width:100%;padding:20px;display:none}.nav-links.open{display:flex}.burger{display:block}.hero h1{font-size:1.9rem}.about-grid,.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav wrap">
+    <div class="logo">🧸 Little Steps Daycare</div>
+    <ul class="nav-links" id="links">
+      <li><a href="#home">الرئيسية</a></li><li><a href="#services">البرامج</a></li>
+      <li><a href="#about">من نحن</a></li><li><a href="#contact">اتصل بنا</a></li>
+      <li><a href="#contact" class="cta">احجزوا جولة</a></li>
+    </ul>
+    <button class="burger" id="burger">☰</button>
+  </div>
+</header>
+<section class="hero" id="home"><div class="wrap">
+  <h1>بيئة آمنة ومحبة لأطفالكم</h1>
+  <p>مركز Little Steps لرعاية الأطفال من عمر 6 أشهر إلى 5 سنوات، بمناهج تعليمية مبكرة ومربيات مؤهلات.</p>
+  <a href="#services" class="btn">برامجنا</a><a href="#contact" class="btn ghost">احجزوا جولة</a>
+</div></section>
+<section id="services"><div class="wrap">
+  <div class="sec-tag">برامجنا</div><h2>برامج مصمّمة لكل مرحلة عمرية</h2>
+  <div class="grid">
+    <div class="card"><h3>الرُّضّع (6–18 شهرًا)</h3><p>رعاية فردية دافئة مع جلسات استكشاف حسية.</p></div>
+    <div class="card"><h3>المشّاؤون (18–36 شهرًا)</h3><p>أنشطة حركية ولغة مبكرة.</p></div>
+    <div class="card"><h3>الحضانة (3–4 سنوات)</h3><p>مناهج تعلم باللعب وقراءة وحساب مبكر.</p></div>
+    <div class="card"><h3>ما قبل الروضة (4–5 سنوات)</h3><p>تحضير أكاديمي واجتماعي كامل.</p></div>
+  </div>
+  <div style="margin-top:30px;text-align:center"><div class="sec-tag">الرسوم</div>
+  <p>الرُّضّع — $1,350/شهر | المشّاؤون — $1,250/شهر | الحضانة — $1,100/شهر | ما قبل الروضة — $1,050/شهر</p></div>
+</div></section>
+<section class="bg" id="about"><div class="wrap about-grid">
+  <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=800&q=60" alt="رعاية أطفال">
+  <div><div class="sec-tag">من نحن</div><h2>عائلة تثق بنا منذ 2014</h2>
+  <p>نحن مركز معتمد بالكامل، بمربيات مؤهلات ونسبة مربية لكل طفل تتجاوز المعايير الولائية.</p>
+  <ul class="check"><li>ترخيص ومعايير أمان معتمدة</li><li>نسبة مربيات عالية</li><li>تقارير يومية للعائلات</li><li>منهج تعليمي مبكر معتمد</li></ul>
+  <a href="#contact" class="btn" style="margin-top:18px">احجزوا جولة تعريفية</a></div>
+</div></section>
+<section id="contact"><div class="wrap contact-grid">
+  <div><div class="sec-tag">اتصل بنا</div><h2>تعالوا وتعرفوا علينا عن قرب</h2>
+  <p>📞 <b>الهاتف:</b> <a href="tel:+16145550293">+1 614-555-0293</a></p>
+  <p>📍 <b>العنوان:</b> 3200 Sullivant Ave, Columbus, OH</p>
+  <p>🕒 <b>ساعات العمل:</b> الاثنين–الجمعة 6:30ص–6م</p></div>
+  <div><form id="tour">
+    <input type="text" placeholder="اسم ولي الأمر" required><input type="tel" placeholder="رقم الهاتف" required>
+    <input type="text" placeholder="عمر الطفل/الأطفال" required>
+    <textarea rows="3" placeholder="مواعيد الرعاية المطلوبة"></textarea>
+    <button type="submit">طلب حجز جولة</button>
+  </form></div>
+</div></section>
+<footer><p>© 2026 <b>Little Steps Daycare</b> — Columbus, OH.</p></footer>
+<a class="fab" href="https://wa.me/16145550293" target="_blank">💬</a>
+<script>
+document.getElementById('burger').onclick=()=>document.getElementById('links').classList.toggle('open');
+document.getElementById('tour').addEventListener('submit',e=>{e.preventDefault();alert('تم استلام طلب الجولة!');});
+</script>
+</body></html>

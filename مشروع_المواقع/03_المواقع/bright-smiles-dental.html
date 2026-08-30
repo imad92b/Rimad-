@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Smiles Dental | عيادة أسنان فينيكس</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--b:#0f7b8f;--b2:#19a7c2;--teal:#e5f6f9;--dark:#0c3b45;--txt:#2b2b2b}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;color:var(--txt);line-height:1.7}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;background:#fff;color:var(--dark);z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-weight:900;font-size:1.3rem;color:var(--b)}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{color:var(--dark);text-decoration:none;font-weight:500}
+.cta{background:var(--b);color:#fff!important;padding:8px 16px;border-radius:30px;font-weight:700}
+.burger{display:none;background:none;border:none;color:var(--dark);font-size:1.8rem}
+.hero{background:linear-gradient(rgba(12,59,69,.84),rgba(12,59,69,.84)),url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=60') center/cover;color:#fff;padding:90px 0;text-align:center}
+.hero h1{font-size:2.5rem;font-weight:900;margin-bottom:16px}
+.hero p{max-width:640px;margin:0 auto 28px;color:#eef}
+.btn{display:inline-block;background:var(--b2);color:#fff;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:700;margin:5px}
+.btn.ghost{background:transparent;border:2px solid #fff}
+section{padding:70px 0}
+.sec-tag{color:var(--b);font-weight:700}
+h2{font-size:2rem;font-weight:900;margin:8px 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#fff;border:1px solid #e6f2f5;border-radius:16px;padding:24px;box-shadow:0 6px 18px rgba(0,0,0,.06);text-align:center}
+.card h3{color:var(--b);margin-bottom:10px}
+.bg{background:var(--teal)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.about-grid img{border-radius:16px;width:100%;height:300px;object-fit:cover}
+ul.check{list-style:none}
+ul.check li{padding:6px 0;border-bottom:1px dashed #ddd}
+ul.check li::before{content:"✔ ";color:var(--b2);font-weight:900}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+form input,form textarea,form select{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin-bottom:14px;font-family:inherit}
+form button{background:var(--b);color:#fff;border:none;padding:13px 30px;border-radius:30px;font-weight:700;cursor:pointer;font-family:inherit}
+footer{background:var(--dark);color:#ccc;text-align:center;padding:26px}
+footer b{color:var(--b2)}
+.fab{position:fixed;bottom:20px;left:20px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:60}
+@media(max-width:760px){.nav-links{position:fixed;top:60px;right:0;flex-direction:column;background:#fff;width:100%;padding:20px;display:none}.nav-links.open{display:flex}.burger{display:block}.hero h1{font-size:1.9rem}.about-grid,.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav wrap">
+    <div class="logo">🦷 Bright Smiles Dental</div>
+    <ul class="nav-links" id="links">
+      <li><a href="#home">الرئيسية</a></li><li><a href="#services">الخدمات</a></li>
+      <li><a href="#about">من نحن</a></li><li><a href="#contact">اتصل بنا</a></li>
+      <li><a href="#contact" class="cta">احجز موعدًا</a></li>
+    </ul>
+    <button class="burger" id="burger">☰</button>
+  </div>
+</header>
+<section class="hero" id="home"><div class="wrap">
+  <h1>ابتسامة صحية تليق بكم</h1>
+  <p>في Bright Smiles Dental نجمع بين الخبرة والتقنيات الحديثة لرعاية أسنانكم وأسنان عائلتكم.</p>
+  <a href="#services" class="btn">خدماتنا</a><a href="#contact" class="btn ghost">احجز موعدًا</a>
+</div></section>
+<section id="services"><div class="wrap">
+  <div class="sec-tag">خدماتنا</div><h2>رعاية شاملة تحت سقف واحد</h2>
+  <div class="grid">
+    <div class="card"><h3>الفحص والتنظيف</h3><p>فحوصات دورية وتنظيف احترافي للوقاية من التسوس.</p></div>
+    <div class="card"><h3>تبييض الأسنان</h3><p>تبييض آمن ومضمون النتائج خلال جلسات قصيرة.</p></div>
+    <div class="card"><h3>تقويم الأسنان</h3><p>تقويم تقليدي وشفاف لمحاذاة الأسنان.</p></div>
+    <div class="card"><h3>حشوات وعلاج الجذور</h3><p>علاجات تحفظ الأسنان وتُنهي الألم.</p></div>
+  </div>
+  <div style="margin-top:30px;text-align:center"><div class="sec-tag">أسعار استرشادية</div>
+  <p>فحص شامل — $60 | تنظيف — $85 | تبييض — $350 | التقويم — يبدأ من $3,500</p></div>
+</div></section>
+<section class="bg" id="about"><div class="wrap about-grid">
+  <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=60" alt="عيادة أسنان">
+  <div><div class="sec-tag">من نحن</div><h2>فريق يعتني بكم منذ 2012</h2>
+  <p>فريقنا من أطباء أسنان معتمدين بتخصصات متعددة، مع تجهيزات تعقيم وتصوير رقمي حديثة.</p>
+  <ul class="check"><li>أطباء معتمدون بخبرة تزيد عن 10 سنوات</li><li>تعقيم وتجهيزات رقمية حديثة</li><li>خطط دفع مرنة</li><li>مواعيد سريعة وطوارئ في نفس اليوم</li></ul>
+  <a href="#contact" class="btn" style="margin-top:18px">اطلبوا موعدكم</a></div>
+</div></section>
+<section id="contact"><div class="wrap contact-grid">
+  <div><div class="sec-tag">اتصل بنا</div><h2>وفرنا وقتكم — احجزوا أونلاين</h2>
+  <p>📞 <b>الهاتف:</b> <a href="tel:+16025550214">+1 602-555-0214</a></p>
+  <p>📍 <b>العنوان:</b> 1400 E Camelback Rd, Phoenix, AZ</p>
+  <p>🕒 <b>ساعات العمل:</b> الاثنين–الجمعة 8ص–6م | السبت 9ص–2م</p></div>
+  <div><form id="appt">
+    <input type="text" placeholder="الاسم الكامل" required><input type="tel" placeholder="رقم الهاتف" required>
+    <input type="date" required>
+    <select><option>نوع الخدمة</option><option>فحص وتنظيف</option><option>تبييض</option><option>تقويم</option><option>حشو</option></select>
+    <button type="submit">تأكيد طلب الموعد</button>
+  </form></div>
+</div></section>
+<footer><p>© 2026 <b>Bright Smiles Dental</b> — Phoenix, AZ.</p></footer>
+<a class="fab" href="https://wa.me/16025550214" target="_blank">💬</a>
+<script>
+document.getElementById('burger').onclick=()=>document.getElementById('links').classList.toggle('open');
+document.getElementById('appt').addEventListener('submit',e=>{e.preventDefault();alert('تم استلام طلب الموعد!');});
+</script>
+</body></html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Fork Diner | مطعم أوستن</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--g:#1d6a3c;--g2:#2f9556;--gold:#e2a63b;--dark:#14281c;--cream:#f7f3ea;--txt:#2b2b2b}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;color:var(--txt);line-height:1.7}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--dark);color:#fff;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-weight:900;font-size:1.3rem;color:var(--gold)}
+.logo span{color:#fff}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{color:#e6e6e6;text-decoration:none;font-weight:500}
+.nav-links a:hover{color:var(--gold)}
+.cta{background:var(--gold);color:var(--dark)!important;padding:8px 16px;border-radius:30px;font-weight:700}
+.burger{display:none;background:none;border:none;color:#fff;font-size:1.8rem}
+.hero{background:linear-gradient(rgba(20,40,28,.82),rgba(20,40,28,.82)),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=60') center/cover;color:#fff;padding:90px 0;text-align:center}
+.hero h1{font-size:2.6rem;font-weight:900;margin-bottom:16px}
+.hero p{font-size:1.15rem;max-width:640px;margin:0 auto 28px;color:#eee}
+.btn{display:inline-block;background:var(--gold);color:var(--dark);padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:700;margin:5px}
+.btn.ghost{background:transparent;color:#fff;border:2px solid var(--gold)}
+section{padding:70px 0}
+.sec-tag{color:var(--g);font-weight:700}
+h2{font-size:2rem;font-weight:900;margin:8px 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:#fff;border:1px solid #eee;border-radius:16px;padding:24px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.card h3{color:var(--g);margin-bottom:10px}
+.bg{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.about-grid img{border-radius:16px;width:100%;height:300px;object-fit:cover}
+ul.check{list-style:none}
+ul.check li{padding:6px 0;border-bottom:1px dashed #ddd}
+ul.check li::before{content:"✔ ";color:var(--g2);font-weight:900}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+form input,form textarea,form select{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin-bottom:14px;font-family:inherit}
+form button{background:var(--g);color:#fff;border:none;padding:13px 30px;border-radius:30px;font-weight:700;cursor:pointer;font-family:inherit}
+footer{background:var(--dark);color:#ccc;text-align:center;padding:26px}
+footer b{color:var(--gold)}
+.fab{position:fixed;bottom:20px;left:20px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:60}
+@media(max-width:760px){.nav-links{position:fixed;top:60px;right:0;flex-direction:column;background:var(--dark);width:100%;padding:20px;display:none}.nav-links.open{display:flex}.burger{display:block}.hero h1{font-size:1.9rem}.about-grid,.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav wrap">
+    <div class="logo">🌿 Green Fork <span>Diner</span></div>
+    <ul class="nav-links" id="links">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#contact">اتصل بنا</a></li>
+      <li><a href="#contact" class="cta">احجز الآن</a></li>
+    </ul>
+    <button class="burger" id="burger">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <h1>مذاق طازج، من مزرعة أوستن إلى مائدتكم</h1>
+    <p>مطعم Green Fork Diner يقدّم أطباقًا أمريكية أصيلة بمكونات محلية طازجة. اطلبوا الآن أو احجزوا طاولتكم في دقائق.</p>
+    <a href="#services" class="btn">اكتشف المنيو</a>
+    <a href="#contact" class="btn ghost">احجز طاولة</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-tag">خدماتنا</div>
+    <h2>ما الذي نقدّمه لكم؟</h2>
+    <div class="grid">
+      <div class="card"><h3>أطباق اليوم</h3><p>برغر بلس، سلطات طازجة، أطباق مشوية، وخيارات نباتية تتغيّر يوميًا.</p></div>
+      <div class="card"><h3>حجز الطاولات</h3><p>احجزوا مقعدكم مسبقًا عبر النموذج أو الهاتف.</p></div>
+      <div class="card"><h3>الطلب الخارجي والجواب</h3><p>طلب سريع للوجبات للجوا أو توصيل ضمن أوستن.</p></div>
+      <div class="card"><h3>فعاليات وحفلات خاصة</h3><p>استضافة أعياد الميلاد والمناسبات العائلية بمساحات خاصة.</p></div>
+    </div>
+    <div style="margin-top:34px;text-align:center">
+      <div class="sec-tag">المنيو الشهري</div>
+      <p>دجاج بالليمون والأعشاب — $14 | برجر فورك المميز — $16 | سلطة المزرعة — $12 | بيلو بلس نباتي — $13</p>
+      <p><b>عرض العائلة:</b> صينية مشاوي تكفي 4 أشخاص — $55</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg" id="about">
+  <div class="wrap about-grid">
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=60" alt="مطعم">
+    <div>
+      <div class="sec-tag">من نحن</div>
+      <h2>قصة Green Fork</h2>
+      <p>بدأنا في 2015 كعربة طعام صغيرة، وبفضل زبائن أوستن الوفيين تحوّلنا إلى مطعم كامل.</p>
+      <ul class="check" style="margin-top:14px">
+        <li>مكونات محلية من مزارع تكساس</li>
+        <li>فريق طبخ محترف</li>
+        <li>خدمة عائلية وودودة</li>
+        <li>خيارات نباتية وخالية من الغلوتين</li>
+      </ul>
+      <a href="#contact" class="btn" style="margin-top:18px">تواصلوا معنا</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="sec-tag">اتصل بنا</div>
+      <h2>احجزوا طاولتكم اليوم</h2>
+      <p>📞 <b>الهاتف:</b> <a href="tel:+15125550187">+1 512-555-0187</a></p>
+      <p>📍 <b>العنوان:</b> 220 Riverside Dr, Austin, TX</p>
+      <p>🕒 <b>ساعات العمل:</b> الاثنين–السبت 11ص–10م | الأحد 12م–9م</p>
+    </div>
+    <div>
+      <form id="booking">
+        <input type="text" placeholder="الاسم الكامل" required>
+        <input type="tel" placeholder="رقم الهاتف" required>
+        <input type="date" required>
+        <select><option>عدد الأشخاص</option><option>2</option><option>4</option><option>6+</option></select>
+        <textarea rows="3" placeholder="ملاحظات أو طلب خاص"></textarea>
+        <button type="submit">إرسال طلب الحجز</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <b>Green Fork Diner</b> — Austin, TX. جميع الحقوق محفوظة.</p>
+</footer>
+
+<a class="fab" href="https://wa.me/15125550187" target="_blank">💬</a>
+
+<script>
+document.getElementById('burger').onclick=()=>document.getElementById('links').classList.toggle('open');
+document.getElementById('booking').addEventListener('submit',e=>{e.preventDefault();alert('تم استلام طلب الحجز!');});
+</script>
+</body>
+</html>
